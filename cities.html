@@ -12,14 +12,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </head>
-<style>
-  .responsive
-  {
-    max-width: 300px;
 
-    height: 400px;
-  }
-</style>
     
     <body>
         <div class="container" style="color: blue;">
@@ -46,23 +39,31 @@
         <p>Which row breaks first? Answer<br>Cities row breaks first as cities are in the class "col-md" which is medium devices, first the medium devices breaks first and later small devices.Medium devices are defined as having a screen width from 768 pixels to 991 pixels.
 
         </p>
-        <div class="container">
-          <div class="image-container">
+        <div class="container flex-row d-flex gap-2">
+          
           
             
-          <img src="pune.jpg"  alt="Pune" class="responsive" width="400" height="400">
-          <img src="dehradun.jpg"  alt="dehradun" class="responsive" width="400" height="400">
-          <img src="ahmedabad.jpg"  alt="Ahmedabad" class="responsive" width="400" height="400">
+          <img src="pune.jpg"  alt="Pune" class="img-fluid" width="400" height="400">
+          <img src="dehradun.jpg"  alt="dehradun" class="img-fluid" width="400" height="400">
+          <img src="ahmedabad.jpg"  alt="Ahmedabad" class="img-fluid" width="400" height="400">
 
 
-          </div>
+          
+
+
+
+
+
+          </div><br>
+          <h4>THUMBNAIL IMAGES</h4>
           <div class="thumbnail-container">
-            <img src="pune.jpg" class="img-thumbnail" width="300" height="300">
-            <img src="dehradun.jpg" class="img-thumbnail" width="300" height="300">
-            <img src="ahmedabad.jpg" class="img-thumbnail" width="300" height="300">
+            <img src="pune.jpg" alt="Pune" class="img-thumbnail" width="400" height="400">
+            <img src="dehradun.jpg" alt="Dehradun" class="img-thumbnail" width="400" height="400">
+            <img src="ahmedabad.jpg" alt="Ahmedabad" class="img-thumbnail" width="400" height="400">
           </div>
 
-        </div>
+        </div><br>
+        <h4>TABLE</h4>
         <table>
 
           <table class="table">
@@ -83,7 +84,7 @@
                 <td>Houston River</td>
                 <td>Herbal Tree</td>
               </tr>
-              <tr class="table-secondary">
+              <tr class="table-alert">
                 <th scope="row">E</th>
                 <td>England</td>
                 <td>England River</td>
@@ -95,19 +96,19 @@
                 <td>Missouri River</td>
                 <td>Missouri Tree</td>
               </tr>
-              <tr class="table-secondary">
+              <tr class="table-warning">
                 <th scope="row">A</th>
                 <td>Ahmedabad</td>
                 <td>Ahmedabad River</td>
                 <td>Ahmedabad Tree</td>
               </tr>
-              <tr class="table-dark">
+              <tr class="table-success">
                 <th scope="row">L</th>
                 <td>Lewis</td>
                 <td>Lewis River</td>
                 <td>Lewis Tree</td>
               </tr>
-              <tr class="table-light">
+              <tr class="table-danger">
                 <th scope="row">I</th>
                 <td>Illinois</td>
                 <td>Illinois River</td>
@@ -116,6 +117,23 @@
           
              </tbody>
           </table>
+          <br>
+
+          <h5>BUTTONS</h5>
+          <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group mr-2" role="group" aria-label="First group">
+              
+            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+              <button type="button" class="btn btn-success">L</button>
+              <button type="button" class="btn btn-success">M</button>
+              <button type="button" class="btn btn-success">H</button>
+              <button type="button" class="btn btn-warning">A</button>
+              <button type="button" class="btn btn-warning">E</button>
+              
+              <button type="button" class="btn btn-danger">I</button>
+
+            </div>
+          </div>
         
 
         
